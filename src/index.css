@@ -6,3 +6,8 @@
   main {
     flex-grow: 1;
   }
+
+  .imgEmpleado{
+    height: 80px;
+    object-fit: contain;
+  }
