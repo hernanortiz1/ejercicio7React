@@ -47,8 +47,8 @@ const ListaEmpleados = () => {
   ];
 
   return (
-    <div>
-      <TarjetaEmpleado />
+    <div className="shadow">
+      <TarjetaEmpleado empleadoProps={empleados}/>
     </div>
   );
 };

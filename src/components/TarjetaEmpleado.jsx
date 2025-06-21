@@ -1,8 +1,9 @@
-import { Card, CardGroup, Form, Button } from "react-bootstrap";
+import { Card } from "react-bootstrap";
 // import {man, man1, man2, woman1, woman2, woman3} from "../assets"
 import man from "../assets/man.png";
 
-const TarjetaEmpleado = () => {
+const TarjetaEmpleado = ({empleadoProps}) => {
+  
   return (
     <section className="p-3 ">
       <div className="card mb-3 shadow ">
@@ -12,7 +13,7 @@ const TarjetaEmpleado = () => {
           </div>
           <div className="col-md-10">
             <Card>
-              <Card.Title className="m-2">Nombre: </Card.Title>
+              <Card.Title className="m-2">Nombre: {empleadoProps.id}</Card.Title>
               <Card.Body className="fondoFormulario">
                 <Card.Text>
                   CEO
