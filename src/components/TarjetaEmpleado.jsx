@@ -22,7 +22,7 @@ const TarjetaEmpleado = ({ empleadoProps }) => {
               <Card.Body className="fondoFormulario">
                 <div className="d-flex fw-bold">
                   {title}:
-                  <div className="ms-1 bg-primary-subtle px-2 fw-normal">
+                  <div className="ms-1 bg-primary-subtle px-2 fw-normal rounded-2">
                     {department}</div>
                 </div>
               </Card.Body>
