@@ -1,4 +1,4 @@
-# 🎨 Formulario de Colores en React
+# 👨‍💼 Lista de empleados
 
 Este proyecto es una aplicación web hecha en React que permite listar empleados utilizando componentes reutilizables. Se utiliza React Bootstrap para el diseño visual, y la información de los empleados se renderiza dinámicamente a partir de un array.
 
