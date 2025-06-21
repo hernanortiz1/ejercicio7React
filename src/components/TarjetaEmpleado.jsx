@@ -1,27 +1,31 @@
 import { Card } from "react-bootstrap";
 // import {man, man1, man2, woman1, woman2, woman3} from "../assets"
-import man from "../assets/man.png";
 
-const TarjetaEmpleado = ({empleadoProps}) => {
-  
+const TarjetaEmpleado = ({ empleadoProps }) => {
+  const { fullName, title, department, pic } = empleadoProps;
+
   return (
     <section className="p-3 ">
-      <div className="card mb-3 shadow ">
+      <div className="card mb-3 shadow border-primary">
         <div className="row g-0 align-items-center">
-          <div className="col-md-2">
-            <Card.Img variant="top" src={man} className="imgEmpleado" />
+          <div className="col-md-2 d-flex justify-content-center">
+            <img
+              src={pic}
+              alt={fullName}
+              className="imgEmpleado"
+            />
           </div>
+
           <div className="col-md-10">
-            <Card>
-              <Card.Title className="m-2">Nombre: {empleadoProps.id}</Card.Title>
+            <Card className="bg-body-secondary">
+              <Card.Title className="m-2">Nombre: {fullName}</Card.Title>
               <Card.Body className="fondoFormulario">
-                <Card.Text>
-                  CEO
-                </Card.Text>
+                <div className="d-flex fw-bold">
+                  {title}:
+                  <div className="ms-1 bg-primary-subtle px-2 fw-normal">
+                    {department}</div>
+                </div>
               </Card.Body>
-              <Card.Footer>
-                Business
-              </Card.Footer>
             </Card>
           </div>
         </div>
