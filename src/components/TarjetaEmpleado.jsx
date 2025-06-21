@@ -1,5 +1,4 @@
 import { Card } from "react-bootstrap";
-// import {man, man1, man2, woman1, woman2, woman3} from "../assets"
 
 const TarjetaEmpleado = ({ empleadoProps }) => {
   const { fullName, title, department, pic } = empleadoProps;
